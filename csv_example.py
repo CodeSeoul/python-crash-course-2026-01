@@ -5,9 +5,10 @@ data = []
 with open("sample.csv", "r") as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
+        print(row)
         data.append(row)
 
-print(data)
+# print(data)
 
 # How many hours did Bob work?
 hours = 0
